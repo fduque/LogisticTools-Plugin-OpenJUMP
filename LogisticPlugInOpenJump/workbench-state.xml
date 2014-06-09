@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench-state>
+  <properties>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - FEATUREINFO_WINDOW_POSITION_Y</key>
+      <value class="java.lang.Integer">15</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.datastore.ConnectionManager - CONNECTION DESCRIPTORS</key>
+      <value class="java.util.ArrayList" />
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - HORIZONTAL_KEY</key>
+      <value class="java.lang.Integer">0</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - FEATUREINFO_WINDOW_POSITION_X</key>
+      <value class="java.lang.Integer">15</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - MAXIMIZED_KEY</key>
+      <value class="java.lang.Boolean">false</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.datasource.SaveFileDataSourceQueryChooser - FILE CHOOSER DIRECTORY</key>
+      <value class="java.lang.String">C:\Users\Developer\Desktop</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - WIDTH_KEY</key>
+      <value class="java.lang.Integer">1229</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - STATUSPANEL_DIVIDER_LOCATION_3</key>
+      <value class="java.lang.Integer">90</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - STATUSPANEL_DIVIDER_LOCATION_2</key>
+      <value class="java.lang.Integer">90</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.datasource.LoadDatasetPlugIn - LAST FORMAT</key>
+      <value class="java.lang.String">ESRI Shapefile</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - STATUSPANEL_DIVIDER_LOCATION_4</key>
+      <value class="java.lang.Integer">90</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">org.openjump.core.ui.SelectionStyllingOptionsPanel SELECTION_STYLE_COLOR</key>
+      <value class="java.awt.Color">255, 255, 0, 255</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">org.openjump.core.ui.plugin.view.EasyPanelEZ_LIST_KEY</key>
+      <value class="java.util.HashMap" />
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">org.openjump.core.ui.plugin.file.open.OpenProjectWizard - FILE CHOOSER DIRECTORY</key>
+      <value class="java.lang.String">C:\Users\Developer\Desktop\Apresentacao Dissertacao PUC\Exemplo OpenJump - Problema de Roteirização de Veículos\Projeto Exemplo Roterizacao</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">class com.vividsolutions.jump.workbench.ui.snap.GridRenderer - ENABLED</key>
+      <value class="java.lang.Boolean">false</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - FEATUREINFO_WINDOW_SIZE_WIDTH</key>
+      <value class="java.lang.Integer">500</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - STATUSPANEL_DIVIDER_LOCATION_1</key>
+      <value class="java.lang.Integer">821</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.snap.SnapToFeaturesPolicy - ENABLED</key>
+      <value class="java.lang.Boolean">false</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">org.openjump.core.ui.SelectionStyllingOptionsPanel SELECTION_STYLE_POINT_SIZE</key>
+      <value class="java.lang.Integer">5</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.SaveProjectAsPlugIn - FILE CHOOSER DIRECTORY</key>
+      <value class="java.lang.String">C:\Users\Developer\Desktop\Apresentacao Dissertacao PUC\Exemplo OpenJump  - Problema de Localizacao Unica</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - DESKTOPSTATUS_DIVIDER_LOCATION</key>
+      <value class="java.lang.Integer">661</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.datasource.SaveDatasetAsPlugIn - LAST FORMAT</key>
+      <value class="java.lang.String">WKT</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - ATTRIBUTES_WINDOW_SIZE_WIDTH</key>
+      <value class="java.lang.Integer">820</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">org.openjump.core.ui.plugin.file.OpenRecentPlugIn.PROJECTS</key>
+      <value class="java.util.LinkedHashSet">
+        <item class="java.lang.String">C:\Users\Developer\Desktop\Apresentacao Dissertacao PUC\Exemplo OpenJump - Problema Formacao de Zonas\Projeto Exemplo Nao Setorizado Area 0.01 e 22 graus</item>
+        <item class="java.lang.String">C:\Users\Developer\Desktop\Apresentacao Dissertacao PUC\Exemplo OpenJump - Problema Formacao de Zonas\Projeto Exemplo Setorizado Area 0.01 e 22 graus 3 setores</item>
+        <item class="java.lang.String">C:\Users\Developer\Desktop\Apresentacao Dissertacao PUC\Exemplo OpenJump - Problema de Roteirização de Veículos\Projeto Exemplo Roterizacao\Projeto Exemplo Roterizacao.jmp</item>
+      </value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - HEIGHT_KEY</key>
+      <value class="java.lang.Integer">722</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - ATTRIBUTES_WINDOW_POSITION_X</key>
+      <value class="java.lang.Integer">262</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - ATTRIBUTES_WINDOW_POSITION_Y</key>
+      <value class="java.lang.Integer">70</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">org.openjump.core.ui.SelectionStyllingOptionsPanel SELECTION_STYLE_POINT_FORM</key>
+      <value class="java.lang.String">SQUARE</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.snap.SnapToGridPolicy - ENABLED</key>
+      <value class="java.lang.Boolean">false</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - FEATUREINFO_WINDOW_SIZE_HEIGHT</key>
+      <value class="java.lang.Integer">300</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.datasource.LoadFileDataSourceQueryChooser - FILE CHOOSER COORDINATE SYSTEM</key>
+      <value class="java.lang.String">Unspecified</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.datasource.LoadFileDataSourceQueryChooser - FILE CHOOSER DIRECTORY</key>
+      <value class="java.lang.String">D:\05 Desktop\Dissertação PUC\Mapas_Camadas</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">org.openjump.core.ui.plugin.file.OpenRecentPlugIn.FILES</key>
+      <value class="java.util.LinkedHashSet" />
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - ATTRIBUTES_WINDOW_SIZE_HEIGHT</key>
+      <value class="java.lang.Integer">125</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - VERTICAL_KEY</key>
+      <value class="java.lang.Integer">22</value>
+    </mapping>
+    <mapping>
+      <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.snap.SnapToVerticesPolicy - ENABLED</key>
+      <value class="java.lang.Boolean">false</value>
+    </mapping>
+  </properties>
+</workbench-state>
+
