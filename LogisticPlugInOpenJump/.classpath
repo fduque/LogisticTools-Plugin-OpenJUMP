@@ -17,9 +17,9 @@
 	<classpathentry kind="lib" path="/Users/fabioregis/Developer/workspace/LogisticPlugInOpenJump/lib/ext/jython-2.2.jar"/>
 	<classpathentry kind="lib" path="/Users/fabioregis/Developer/workspace/LogisticPlugInOpenJump/lib/ext/log4j-1.2.16.jar"/>
 	<classpathentry kind="lib" path="/Users/fabioregis/Developer/workspace/LogisticPlugInOpenJump/lib/ext/OpenJUMP-1.6.3-r3576-nosrc.jar"/>
-	<classpathentry kind="lib" path="/Users/fabioregis/Developer/workspace/LogisticPlugInOpenJump/lib/ext/PlugInFabioOJv0.jar"/>
 	<classpathentry kind="lib" path="/Users/fabioregis/Developer/workspace/LogisticPlugInOpenJump/lib/ext/xercesImpl-2.8.1.jar"/>
 	<classpathentry kind="lib" path="/Users/fabioregis/Developer/workspace/LogisticPlugInOpenJump/lib/ext/xml-apis-1.3.03.jar"/>
 	<classpathentry kind="lib" path="/Users/fabioregis/Developer/workspace/LogisticPlugInOpenJump/lib/ext/xmlParserAPIs-2.0.2.jar"/>
+	<classpathentry kind="lib" path="/Users/fabioregis/Downloads/LogisticTools-Plugin-OpenJUMP-master 2/LogisticPlugInOpenJump/lib/ext/PlugInFabioOJv0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

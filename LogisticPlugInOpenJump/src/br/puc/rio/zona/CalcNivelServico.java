@@ -1,6 +1,5 @@
 package br.puc.rio.zona;
 
-import org.python.modules.math;
 
 import br.puc.rio.utilities.Matematica;
 
@@ -58,7 +57,7 @@ Ela calcula o n�vel de servi�o por capacidade ou por tempo, sendo tempo de j
 		double eW = this.zona.getMediaN()*this.zona.getMediaCarga();
 		double varU = this.zona.getVarCarga();
 		double varW = this.zona.getMediaN()*(Math.pow(this.zona.getMediaCarga(),2)+varU);
-		double desvpadW = math.sqrt(varW);
+		double desvpadW = Math.sqrt(varW);
 		double rCAP = valorR*capacidadeVeiculo;
 		this.etaPorCapacidade = (rCAP-eW)/desvpadW;
 		this.nsPorCapacidade = 1 - Matematica

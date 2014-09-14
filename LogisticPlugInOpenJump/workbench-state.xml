@@ -83,7 +83,7 @@
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - DESKTOPSTATUS_DIVIDER_LOCATION</key>
-      <value class="java.lang.Integer">643</value>
+      <value class="java.lang.Integer">642</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.datasource.SaveDatasetAsPlugIn - LAST FORMAT</key>
@@ -103,7 +103,7 @@
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - HEIGHT_KEY</key>
-      <value class="java.lang.Integer">724</value>
+      <value class="java.lang.Integer">723</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - ATTRIBUTES_WINDOW_POSITION_X</key>
@@ -131,7 +131,7 @@
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.datasource.LoadFileDataSourceQueryChooser - FILE CHOOSER DIRECTORY</key>
-      <value class="java.lang.String">/Users/fabioregis/Documents/Mestrado PUC/Apresentacao Dissertacao PUC/Exemplo OpenJump - Problema Formacao de Zonas/Por Nivel de Serviço</value>
+      <value class="java.lang.String">/Users/fabioregis/Documents/Mestrado PUC/Apresentacao Dissertacao PUC/Exemplo OpenJump  - Problema de Localizacao Unica</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">org.openjump.core.ui.plugin.file.OpenRecentPlugIn.FILES</key>
