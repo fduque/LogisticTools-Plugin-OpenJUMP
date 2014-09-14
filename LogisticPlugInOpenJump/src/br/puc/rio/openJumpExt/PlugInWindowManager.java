@@ -16,7 +16,7 @@ import com.vividsolutions.jump.workbench.ui.plugin.FeatureInstaller;
 
 /**
  * @author Developer
- * F·bio Trindade Duque Estrada Regis / duqueregis@gmail.com / PUC-RIO
+ * FÔøΩbio Trindade Duque Estrada Regis / duqueregis@gmail.com / PUC-RIO
  *
  */
 public class PlugInWindowManager extends AbstractPlugIn {
@@ -31,7 +31,7 @@ public class PlugInWindowManager extends AbstractPlugIn {
 	private PlugInAreaAdmissivelZona plugInAreaAdmissivelZona = new PlugInAreaAdmissivelZona();
 	private Opt2PlugIn opt2PlugIn = new Opt2PlugIn();
 	/*
-	Essa classe contÈm os itens de menu (cada item È uma funcionalidade) que ser„o carregados quando o OpenJump iniciar e ir· acionar a execuÁ„o da funcionalidade que o usu·rio escolher.
+	Essa classe contÔøΩm os itens de menu (cada item ÔøΩ uma funcionalidade) que serÔøΩo carregados quando o OpenJump iniciar e irÔøΩ acionar a execuÔøΩÔøΩo da funcionalidade que o usuÔøΩrio escolher.
 		*/	
 	@SuppressWarnings("deprecation")
 	public void initialize(PlugInContext context) throws Exception {
@@ -41,29 +41,29 @@ public class PlugInWindowManager extends AbstractPlugIn {
 				context.getWorkbenchContext());
 
 		featureInstaller.addMainMenuItem(plugInUploadFile, // exe
-				new String[] { "LogPlugIn","Criar Layer" }, // menu path
+				new String[] { "LogisticTools","Criar Layer" }, // menu path
 				"Layer de Pontos", // aqui vai o titulo do subitem do menu
 				false, // checkbox
 				null, // icon
 				null); 
 
 		featureInstaller.addMainMenuItem(clusterPlugIn, // exe
-				new String[] { "LogPlugIn" }, // menu path
-				"FormaÁ„o de Clusters", // aqui vai o titulo do subitem do menu
+				new String[] { "LogisticTools" }, // menu path
+				"Forma√ß√£o de Clusters", // aqui vai o titulo do subitem do menu
 				false, // checkbox
 				null, // icon
 				clusterPlugIn.getEnableCheck()); // enable
 																	// check
 
 		featureInstaller.addMainMenuItem(clarkWrightPlugIn, // exe
-				new String[] { "LogPlugIn","RoteirizaÁ„o" }, // menu path
-				"Clark and Wright", // aqui vai o titulo do subitem do menu
+				new String[] { "LogisticTools","Roteiriza√ß√£o" }, // menu path
+				"Clarke and Wright", // aqui vai o titulo do subitem do menu
 				false, // checkbox
 				null, // icon
 				clarkWrightPlugIn.getEnableCheck()); // enable
 																	// check
 		featureInstaller.addMainMenuItem(opt2PlugIn, // exe
-				new String[] { "LogPlugIn","RoteirizaÁ„o" }, // menu path
+				new String[] { "LogisticTools","Roteiriza√ß√£o" }, // menu path
 				"2-opt", // aqui vai o titulo do subitem do menu
 				false, // checkbox
 				null, // icon
@@ -71,7 +71,7 @@ public class PlugInWindowManager extends AbstractPlugIn {
 																	// check
 
 		featureInstaller.addMainMenuItem(pontoCentralPlugIn, // exe
-				new String[] { "LogPlugIn" }, // menu path
+				new String[] { "LogisticTools" }, // menu path
 				"Ponto Central", // aqui vai o titulo do subitem do menu
 				false, // checkbox
 				null, // icon
@@ -79,22 +79,22 @@ public class PlugInWindowManager extends AbstractPlugIn {
 																	// check
 
 		featureInstaller.addMainMenuItem(plugInNivelServicoZona, // exe
-				new String[] { "LogPlugIn","Zonas" }, // menu path
-				"C·lculo de NÌvel de ServiÁo", // aqui vai o titulo do subitem do menu
+				new String[] { "LogisticTools","Zonas" }, // menu path
+				"C√°lculo de N√≠vel de Servi√ßo", // aqui vai o titulo do subitem do menu
 				false, // checkbox
 				null, // icon
 				plugInNivelServicoZona.getEnableCheck()); // enable
 																	// check
 		featureInstaller.addMainMenuItem(plugInAreaAdmissivelZona, // exe
-				new String[] { "LogPlugIn","Zonas" }, // menu path
-				"C·lculo de ¡rea AdmissÌvel", // aqui vai o titulo do subitem do menu
+				new String[] { "LogisticTools","Zonas" }, // menu path
+				"C√°lculo de √Årea Admiss√≠vel", // aqui vai o titulo do subitem do menu
 				false, // checkbox
 				null, // icon
 				plugInAreaAdmissivelZona.getEnableCheck()); // enable
 																	// check
 		featureInstaller.addMainMenuItem(plugInZona, // exe
-				new String[] { "LogPlugIn","Zonas" }, // menu path
-				"FormaÁ„o de Zonas", // aqui vai o titulo do subitem do menu
+				new String[] { "LogisticTools","Zonas" }, // menu path
+				"Forma√ß√£o de Zonas", // aqui vai o titulo do subitem do menu
 				false, // checkbox
 				null, // icon
 				plugInZona.getEnableCheck()); // enable

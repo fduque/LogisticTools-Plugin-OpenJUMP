@@ -53,7 +53,7 @@ public class TelaCriarLayerDeArquivo extends JDialog {
 		setTitle("Criar Layer de Pontos");
 		this.ioPlugIn = aPlugIn;
 
-		setBounds(100, 100, 533, 355);
+		setBounds(100, 100, 533, 394);
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[] { 0, 73, 28, 85, 115, 80, 102,
 				61, 0, 0, 29, 0 };
@@ -351,7 +351,7 @@ public class TelaCriarLayerDeArquivo extends JDialog {
 			JOptionPane
 			.showMessageDialog(
 					null,
-					"A camada selecionada náo é válida.");
+					"A camada selecionada nï¿½o ï¿½ vï¿½lida.");
 			throw new Exception();
 		}
 	}

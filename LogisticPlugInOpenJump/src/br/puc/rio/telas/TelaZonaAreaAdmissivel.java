@@ -59,7 +59,7 @@ public class TelaZonaAreaAdmissivel extends JDialog {
 		setTitle("C\u00E1lculo de \u00C1rea Admiss\u00EDvel Por N\u00EDvel de Servi\u00E7o");
 		this.zonaPlugIn = aPlugIn;
 		
-		setBounds(100, 100, 595, 524);
+		setBounds(100, 100, 629, 536);
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[]{0, 36, 158, 49, 141, 115, 92, 61, 53, 0, 29, 0};
 		gridBagLayout.rowHeights = new int[]{19, 0, 27, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
@@ -91,7 +91,7 @@ public class TelaZonaAreaAdmissivel extends JDialog {
 		gbc_lblDesviop.gridy = 2;
 		getContentPane().add(lblDesviop, gbc_lblDesviop);
 		
-		JLabel lblTempoInoutZona = new JLabel("Tempo In/Out Zona :");
+		JLabel lblTempoInoutZona = new JLabel("Tempo In ou Out Zona :");
 		GridBagConstraints gbc_lblTempoInoutZona = new GridBagConstraints();
 		gbc_lblTempoInoutZona.insets = new Insets(0, 0, 5, 5);
 		gbc_lblTempoInoutZona.gridx = 2;
@@ -101,7 +101,7 @@ public class TelaZonaAreaAdmissivel extends JDialog {
 		txtMediainout =new JNumericField(10,3);
 		txtMediainout.setPrecision(3);
 		txtMediainout.setAllowNegative(false);
-		txtMediainout.setToolTipText("Insira o tempo para entrar ou sair da zona. Obs: O tempo de entrada sera igual ao tempo de saida.");
+		txtMediainout.setToolTipText("Insira o tempo para entrar ou sair da zona. Obs: O tempo de entrada deverÃ¡ ser igual ao tempo de saida.");
 		txtMediainout.setText("65");
 		GridBagConstraints gbc_txtMediainout = new GridBagConstraints();
 		gbc_txtMediainout.insets = new Insets(0, 0, 5, 5);
@@ -126,6 +126,7 @@ public class TelaZonaAreaAdmissivel extends JDialog {
 		
 		JLabel label_2 = new JLabel("Em minutos.");
 		GridBagConstraints gbc_label_2 = new GridBagConstraints();
+		gbc_label_2.gridwidth = 3;
 		gbc_label_2.insets = new Insets(0, 0, 5, 5);
 		gbc_label_2.gridx = 6;
 		gbc_label_2.gridy = 3;
@@ -166,6 +167,7 @@ public class TelaZonaAreaAdmissivel extends JDialog {
 		
 		JLabel lblEmMinutos = new JLabel("Em minutos.");
 		GridBagConstraints gbc_lblEmMinutos = new GridBagConstraints();
+		gbc_lblEmMinutos.gridwidth = 3;
 		gbc_lblEmMinutos.insets = new Insets(0, 0, 5, 5);
 		gbc_lblEmMinutos.gridx = 6;
 		gbc_lblEmMinutos.gridy = 4;
@@ -666,7 +668,7 @@ public class TelaZonaAreaAdmissivel extends JDialog {
 			JOptionPane
 					.showMessageDialog(
 							null, 
-							"Não foi possível executar o cálculo. Parâmetros pendentes de preenchimento.");
+							"Nï¿½o foi possï¿½vel executar o cï¿½lculo. Parï¿½metros pendentes de preenchimento.");
 			resposta = false;
 		} else {
 			resposta = true;

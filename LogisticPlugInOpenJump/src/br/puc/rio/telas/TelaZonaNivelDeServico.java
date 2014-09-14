@@ -51,6 +51,8 @@ public class TelaZonaNivelDeServico extends JDialog {
 	private JTextField txtNscapa;
 	private JTextField txtNahnorm;
 	private JTextField txtNshmx;
+	private JNumericField mediaPontos;
+	private JNumericField desvPadPontos;
 
 	public TelaZonaNivelDeServico(PlugInNivelServicoZona aPlugIn) {
 
@@ -65,10 +67,10 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gridBagLayout.columnWidths = new int[] { 0, 35, 158, 49, 141, 115, 120,
 				61, 53, 0, 29, 0 };
 		gridBagLayout.rowHeights = new int[] { 23, 0, 27, 0, 0, 0,
-				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 		gridBagLayout.columnWeights = new double[] { 0.0, 0.0, 0.0, 1.0, 1.0,
 				1.0, 1.0, 1.0, 1.0, 1.0, 0.0, Double.MIN_VALUE };
-		gridBagLayout.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+		gridBagLayout.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		getContentPane().setLayout(gridBagLayout);
 
@@ -84,6 +86,15 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_lblInformaesParaClculo_1.gridy = 1;
 		getContentPane().add(lblInformaesParaClculo_1,
 				gbc_lblInformaesParaClculo_1);
+		
+		JLabel lblClculoPorTempo = new JLabel("CÃ¡lculo por Tempo:");
+		lblClculoPorTempo.setForeground(new Color(0, 0, 255));
+		lblClculoPorTempo.setBackground(new Color(192, 192, 192));
+		GridBagConstraints gbc_lblClculoPorTempo = new GridBagConstraints();
+		gbc_lblClculoPorTempo.insets = new Insets(0, 0, 5, 5);
+		gbc_lblClculoPorTempo.gridx = 2;
+		gbc_lblClculoPorTempo.gridy = 2;
+		getContentPane().add(lblClculoPorTempo, gbc_lblClculoPorTempo);
 
 		JLabel lblMdia = new JLabel("M\u00E9dia");
 		GridBagConstraints gbc_lblMdia = new GridBagConstraints();
@@ -172,6 +183,14 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_txtHmax.gridy = 5;
 		getContentPane().add(txtHmax, gbc_txtHmax);
 		txtHmax.setColumns(10);
+		
+		JLabel lblClculoPorCapacidade = new JLabel("CÃ¡lculo por Capacidade:");
+		lblClculoPorCapacidade.setForeground(new Color(0, 0, 255));
+		GridBagConstraints gbc_lblClculoPorCapacidade = new GridBagConstraints();
+		gbc_lblClculoPorCapacidade.insets = new Insets(0, 0, 5, 5);
+		gbc_lblClculoPorCapacidade.gridx = 2;
+		gbc_lblClculoPorCapacidade.gridy = 6;
+		getContentPane().add(lblClculoPorCapacidade, gbc_lblClculoPorCapacidade);
 
 		JLabel label_3 = new JLabel("M\u00E9dia");
 		GridBagConstraints gbc_label_3 = new GridBagConstraints();
@@ -186,12 +205,45 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_label_4.gridx = 5;
 		gbc_label_4.gridy = 6;
 		getContentPane().add(label_4, gbc_label_4);
+		
+		JLabel lblNoPontosDe = new JLabel("No. Pontos de Atendimento :");
+		GridBagConstraints gbc_lblNoPontosDe = new GridBagConstraints();
+		gbc_lblNoPontosDe.insets = new Insets(0, 0, 5, 5);
+		gbc_lblNoPontosDe.gridx = 2;
+		gbc_lblNoPontosDe.gridy = 7;
+		getContentPane().add(lblNoPontosDe, gbc_lblNoPontosDe);
+		
+		mediaPontos = new JNumericField(10, 3);
+		mediaPontos.setToolTipText("Insira a carga media a ser coletado em cada atendimento.");
+		mediaPontos.setText("9000");
+		mediaPontos.setPrecision(3);
+		mediaPontos.setColumns(10);
+		mediaPontos.setAllowNegative(false);
+		GridBagConstraints gbc_mediaPontos = new GridBagConstraints();
+		gbc_mediaPontos.insets = new Insets(0, 0, 5, 5);
+		gbc_mediaPontos.fill = GridBagConstraints.HORIZONTAL;
+		gbc_mediaPontos.gridx = 4;
+		gbc_mediaPontos.gridy = 7;
+		getContentPane().add(mediaPontos, gbc_mediaPontos);
+		
+		desvPadPontos = new JNumericField(10, 3);
+		desvPadPontos.setToolTipText("Insira o valor do desvio padrao da carga a ser coletada em cada ponto de atendimento.");
+		desvPadPontos.setText("1687.3055");
+		desvPadPontos.setPrecision(3);
+		desvPadPontos.setColumns(10);
+		desvPadPontos.setAllowNegative(false);
+		GridBagConstraints gbc_desvpadpONTOS = new GridBagConstraints();
+		gbc_desvpadpONTOS.insets = new Insets(0, 0, 5, 5);
+		gbc_desvpadpONTOS.fill = GridBagConstraints.HORIZONTAL;
+		gbc_desvpadpONTOS.gridx = 5;
+		gbc_desvpadpONTOS.gridy = 7;
+		getContentPane().add(desvPadPontos, gbc_desvpadpONTOS);
 
 		JLabel lblCarga = new JLabel("Carga :");
 		GridBagConstraints gbc_lblCarga = new GridBagConstraints();
 		gbc_lblCarga.insets = new Insets(0, 0, 5, 5);
 		gbc_lblCarga.gridx = 2;
-		gbc_lblCarga.gridy = 7;
+		gbc_lblCarga.gridy = 8;
 		getContentPane().add(lblCarga, gbc_lblCarga);
 
 		txtMediacarga = new JNumericField(10,3);
@@ -204,7 +256,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_txtMediacarga.insets = new Insets(0, 0, 5, 5);
 		gbc_txtMediacarga.fill = GridBagConstraints.HORIZONTAL;
 		gbc_txtMediacarga.gridx = 4;
-		gbc_txtMediacarga.gridy = 7;
+		gbc_txtMediacarga.gridy = 8;
 		getContentPane().add(txtMediacarga, gbc_txtMediacarga);
 		txtMediacarga.setColumns(10);
 
@@ -218,7 +270,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_txtDesvcarga.insets = new Insets(0, 0, 5, 5);
 		gbc_txtDesvcarga.fill = GridBagConstraints.HORIZONTAL;
 		gbc_txtDesvcarga.gridx = 5;
-		gbc_txtDesvcarga.gridy = 7;
+		gbc_txtDesvcarga.gridy = 8;
 		getContentPane().add(txtDesvcarga, gbc_txtDesvcarga);
 		txtDesvcarga.setColumns(10);
 
@@ -226,7 +278,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		GridBagConstraints gbc_lblCapacidadeVeculo = new GridBagConstraints();
 		gbc_lblCapacidadeVeculo.insets = new Insets(0, 0, 5, 5);
 		gbc_lblCapacidadeVeculo.gridx = 2;
-		gbc_lblCapacidadeVeculo.gridy = 8;
+		gbc_lblCapacidadeVeculo.gridy = 9;
 		getContentPane().add(lblCapacidadeVeculo, gbc_lblCapacidadeVeculo);
 
 		txtCapacid =  new JNumericField(10,3);
@@ -239,7 +291,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_txtCapacid.insets = new Insets(0, 0, 5, 5);
 		gbc_txtCapacid.fill = GridBagConstraints.HORIZONTAL;
 		gbc_txtCapacid.gridx = 4;
-		gbc_txtCapacid.gridy = 8;
+		gbc_txtCapacid.gridy = 9;
 		getContentPane().add(txtCapacid, gbc_txtCapacid);
 		txtCapacid.setColumns(10);
 
@@ -247,7 +299,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		GridBagConstraints gbc_lblPerdaPorEstiva = new GridBagConstraints();
 		gbc_lblPerdaPorEstiva.insets = new Insets(0, 0, 5, 5);
 		gbc_lblPerdaPorEstiva.gridx = 2;
-		gbc_lblPerdaPorEstiva.gridy = 9;
+		gbc_lblPerdaPorEstiva.gridy = 10;
 		getContentPane().add(lblPerdaPorEstiva, gbc_lblPerdaPorEstiva);
 
 		txtperdaest = new JNumericField(10,3);
@@ -260,7 +312,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_txtperdaest.insets = new Insets(0, 0, 5, 5);
 		gbc_txtperdaest.fill = GridBagConstraints.HORIZONTAL;
 		gbc_txtperdaest.gridx = 4;
-		gbc_txtperdaest.gridy = 9;
+		gbc_txtperdaest.gridy = 10;
 		getContentPane().add(txtperdaest, gbc_txtperdaest);
 		txtperdaest.setColumns(10);
 
@@ -271,7 +323,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_btnNvelDeServio.fill = GridBagConstraints.BOTH;
 		gbc_btnNvelDeServio.insets = new Insets(0, 0, 5, 5);
 		gbc_btnNvelDeServio.gridx = 2;
-		gbc_btnNvelDeServio.gridy = 10;
+		gbc_btnNvelDeServio.gridy = 11;
 		getContentPane().add(btnNvelDeServio, gbc_btnNvelDeServio);
 
 		btnNvelDeServio.addActionListener(new ActionListener() {
@@ -289,6 +341,9 @@ public class TelaZonaNivelDeServico extends JDialog {
 			
 				zona.setMediaCarga(Double.valueOf(txtMediacarga.getText()));
 				zona.setDesvPadCarga(Double.valueOf(txtDesvcarga.getText()));
+				
+				zona.setMediaN(Double.valueOf(mediaPontos.getText()));
+				zona.setDesvPadN(Double.valueOf(desvPadPontos.getText()));
 
 				// passando a zona e os paramentros para calcular os tipos de
 				// nivel de servico
@@ -310,7 +365,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		GridBagConstraints gbc_lblResultados = new GridBagConstraints();
 		gbc_lblResultados.insets = new Insets(0, 0, 5, 5);
 		gbc_lblResultados.gridx = 2;
-		gbc_lblResultados.gridy = 12;
+		gbc_lblResultados.gridy = 13;
 		getContentPane().add(lblResultados, gbc_lblResultados);
 
 		JLabel lblPorCapacidade = new JLabel("Por Capacidade :");
@@ -319,7 +374,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_lblPorCapacidade.gridwidth = 2;
 		gbc_lblPorCapacidade.insets = new Insets(0, 0, 5, 5);
 		gbc_lblPorCapacidade.gridx = 2;
-		gbc_lblPorCapacidade.gridy = 13;
+		gbc_lblPorCapacidade.gridy = 14;
 		getContentPane().add(lblPorCapacidade, gbc_lblPorCapacidade);
 
 		txtNscapa = new JTextField();
@@ -331,7 +386,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_txtNscapa.insets = new Insets(0, 0, 5, 5);
 		gbc_txtNscapa.fill = GridBagConstraints.HORIZONTAL;
 		gbc_txtNscapa.gridx = 4;
-		gbc_txtNscapa.gridy = 13;
+		gbc_txtNscapa.gridy = 14;
 		getContentPane().add(txtNscapa, gbc_txtNscapa);
 		txtNscapa.setColumns(10);
 
@@ -341,7 +396,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_lblPorTempo.gridwidth = 2;
 		gbc_lblPorTempo.insets = new Insets(0, 0, 5, 5);
 		gbc_lblPorTempo.gridx = 2;
-		gbc_lblPorTempo.gridy = 14;
+		gbc_lblPorTempo.gridy = 15;
 		getContentPane().add(lblPorTempo, gbc_lblPorTempo);
 
 		txtNahnorm = new JTextField();
@@ -352,7 +407,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_txtNahnorm.insets = new Insets(0, 0, 5, 5);
 		gbc_txtNahnorm.fill = GridBagConstraints.HORIZONTAL;
 		gbc_txtNahnorm.gridx = 4;
-		gbc_txtNahnorm.gridy = 14;
+		gbc_txtNahnorm.gridy = 15;
 		getContentPane().add(txtNahnorm, gbc_txtNahnorm);
 		txtNahnorm.setColumns(10);
 
@@ -362,7 +417,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_lblPorTempoH.insets = new Insets(0, 0, 5, 5);
 		gbc_lblPorTempoH.anchor = GridBagConstraints.EAST;
 		gbc_lblPorTempoH.gridx = 2;
-		gbc_lblPorTempoH.gridy = 15;
+		gbc_lblPorTempoH.gridy = 16;
 		getContentPane().add(lblPorTempoH, gbc_lblPorTempoH);
 
 		txtNshmx = new JTextField();
@@ -373,7 +428,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		gbc_txtNshmx.insets = new Insets(0, 0, 5, 5);
 		gbc_txtNshmx.fill = GridBagConstraints.HORIZONTAL;
 		gbc_txtNshmx.gridx = 4;
-		gbc_txtNshmx.gridy = 15;
+		gbc_txtNshmx.gridy = 16;
 		getContentPane().add(txtNshmx, gbc_txtNshmx);
 		txtNshmx.setColumns(10);
 
@@ -381,7 +436,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 		GridBagConstraints gbc_lblNewLabel_3 = new GridBagConstraints();
 		gbc_lblNewLabel_3.insets = new Insets(0, 0, 0, 5);
 		gbc_lblNewLabel_3.gridx = 2;
-		gbc_lblNewLabel_3.gridy = 16;
+		gbc_lblNewLabel_3.gridy = 17;
 		getContentPane().add(lblNewLabel_3, gbc_lblNewLabel_3);
 
 	}
@@ -549,7 +604,7 @@ public class TelaZonaNivelDeServico extends JDialog {
 			JOptionPane
 					.showMessageDialog(
 							null, 
-							"Não foi possível executar o cálculo. Parâmetros pendentes de preenchimento.");
+							"Nï¿½o foi possï¿½vel executar o cï¿½lculo. Parï¿½metros pendentes de preenchimento.");
 			resposta = false;
 		} else {
 			resposta = true;

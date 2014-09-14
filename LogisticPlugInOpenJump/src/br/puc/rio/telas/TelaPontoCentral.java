@@ -62,7 +62,7 @@ public class TelaPontoCentral extends JDialog {
 	public TelaPontoCentral(PontoCentralPlugIn aPlugIn) {
 
 		super(aPlugIn.getPlugInContext().getWorkbenchFrame(),
-				"Métodos para calcular Ponto Central", false);
+				"Mï¿½todos para calcular Ponto Central", false);
 		setResizable(false);
 		setTitle("Procedimentos para Calcular Ponto Central");
 		this.analiseEspacialPlugIn = aPlugIn;
@@ -71,7 +71,7 @@ public class TelaPontoCentral extends JDialog {
 		setBounds(100, 100, 746, 536);
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[] { 0, 93, 120, 100, 80, 102,
-				124, 0, 93, 29, 0 };
+				159, 44, 93, 29, 0 };
 		gridBagLayout.rowHeights = new int[] { 23, 26, 0, 0, 0, 0, 0, 115, 26, 0, 0, 0, 27, 0, 0, 0, 0, 0 };
 		gridBagLayout.columnWeights = new double[] { 0.0, 1.0, 1.0, 1.0,
 				1.0, 1.0, 1.0, 1.0, 0.0, 0.0, Double.MIN_VALUE };
@@ -83,8 +83,8 @@ public class TelaPontoCentral extends JDialog {
 		lblDefina.setForeground(Color.BLACK);
 		lblDefina.setBackground(Color.ORANGE);
 		GridBagConstraints gbc_lblDefina = new GridBagConstraints();
-		gbc_lblDefina.anchor = GridBagConstraints.WEST;
-		gbc_lblDefina.gridwidth = 2;
+		gbc_lblDefina.fill = GridBagConstraints.HORIZONTAL;
+		gbc_lblDefina.gridwidth = 4;
 		gbc_lblDefina.insets = new Insets(0, 0, 5, 5);
 		gbc_lblDefina.gridx = 1;
 		gbc_lblDefina.gridy = 1;
@@ -301,7 +301,7 @@ public class TelaPontoCentral extends JDialog {
 				GeoUtilidades g = new GeoUtilidades();
 		
 				try {
-					geraCamadaRespostaPontoCentral(novo.getResultXDoub(),novo.getResultYDoub(), "Método Derivada - Retangular", listString, analiseEspacialPlugIn.getPlugInContext());
+					geraCamadaRespostaPontoCentral(novo.getResultXDoub(),novo.getResultYDoub(), "Mï¿½todo Derivada - Retangular", listString, analiseEspacialPlugIn.getPlugInContext());
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -353,7 +353,7 @@ public class TelaPontoCentral extends JDialog {
 										lblNewLabel_resultEixoY.setText(novo.getResultY());
 						
 										try {
-											geraCamadaRespostaPontoCentral(novo.getResultXDoub(),novo.getResultYDoub(), "Método Weisfield - Euclidiano " + "/Precisão = " + txtPrecisaoEuclidiano.getText() , listString, analiseEspacialPlugIn.getPlugInContext());
+											geraCamadaRespostaPontoCentral(novo.getResultXDoub(),novo.getResultYDoub(), "Mï¿½todo Weisfield - Euclidiano " + "/Precisï¿½o = " + txtPrecisaoEuclidiano.getText() , listString, analiseEspacialPlugIn.getPlugInContext());
 										} catch (Exception e) {
 											// TODO Auto-generated catch block
 											e.printStackTrace();
@@ -377,8 +377,9 @@ public class TelaPontoCentral extends JDialog {
 		
 				JLabel lblPreciso = new JLabel("Precis\u00E3o %  :");
 				GridBagConstraints gbc_lblPreciso = new GridBagConstraints();
-				gbc_lblPreciso.insets = new Insets(0, 0, 5, 5);
 				gbc_lblPreciso.anchor = GridBagConstraints.EAST;
+				gbc_lblPreciso.gridwidth = 2;
+				gbc_lblPreciso.insets = new Insets(0, 0, 5, 5);
 				gbc_lblPreciso.gridx = 3;
 				gbc_lblPreciso.gridy = 10;
 				getContentPane().add(lblPreciso, gbc_lblPreciso);
@@ -391,10 +392,9 @@ public class TelaPontoCentral extends JDialog {
 				
 				txtPrecisaoEuclidiano.setToolTipText("Insira a precis\u00E3o desejada. Exemplo: 0.01 = 1%.");
 				GridBagConstraints gbc_txtPrecisaoEuclidiano = new GridBagConstraints();
-				gbc_txtPrecisaoEuclidiano.gridwidth = 2;
 				gbc_txtPrecisaoEuclidiano.insets = new Insets(0, 0, 5, 5);
 				gbc_txtPrecisaoEuclidiano.fill = GridBagConstraints.BOTH;
-				gbc_txtPrecisaoEuclidiano.gridx = 4;
+				gbc_txtPrecisaoEuclidiano.gridx = 5;
 				gbc_txtPrecisaoEuclidiano.gridy = 10;
 				getContentPane().add(txtPrecisaoEuclidiano, gbc_txtPrecisaoEuclidiano);
 				txtPrecisaoEuclidiano.setColumns(10);
@@ -417,7 +417,7 @@ public class TelaPontoCentral extends JDialog {
 								GeoUtilidades g = new GeoUtilidades();
 								try {
 									
-									geraCamadaRespostaPontoCentral(novo.getResultXDoub(),novo.getResultYDoub(), "Método Fibonacci-Retangular " + " Tipo: " + comboBox_tipoFibonacci.getSelectedItem().toString() + " Parâmetro = " + textField_tipoFibonacci.getText(), listString, analiseEspacialPlugIn.getPlugInContext());
+									geraCamadaRespostaPontoCentral(novo.getResultXDoub(),novo.getResultYDoub(), "Mï¿½todo Fibonacci-Retangular " + " Tipo: " + comboBox_tipoFibonacci.getSelectedItem().toString() + " Parï¿½metro = " + textField_tipoFibonacci.getText(), listString, analiseEspacialPlugIn.getPlugInContext());
 									
 								} catch (Exception e) {
 									// TODO Auto-generated catch block
@@ -485,6 +485,7 @@ public class TelaPontoCentral extends JDialog {
 		
 		textField_tipoFibonacci.setToolTipText("Insira o p\u00E2metro de acordo com o tipo selecionado ao lado. Exemplo: Tipo Qtd de Itera\u00E7\u00F5es Par\u00E2metro = 20. Tipo Precis\u00E3o Par\u00E2metro = 0.01");
 		GridBagConstraints gbc_textField_tipoFibonacci = new GridBagConstraints();
+		gbc_textField_tipoFibonacci.gridwidth = 2;
 		gbc_textField_tipoFibonacci.insets = new Insets(0, 0, 5, 5);
 		gbc_textField_tipoFibonacci.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textField_tipoFibonacci.gridx = 8;
@@ -602,7 +603,7 @@ public void geraCamadaRespostaPontoCentral (double eixoX,double eixoY, String no
 		fs1.addAttribute("infoPontos", AttributeType.STRING);
 		
 		FeatureCollection fc1 = new FeatureDataset(fs1);
-			// LAYOUT ARQUIVO - POSIÇÕES DE CADA CAMPO
+			// LAYOUT ARQUIVO - POSIï¿½ï¿½ES DE CADA CAMPO
 			// 0 - EIXO X
 			// 1 - EIXO Y
 			// 2 - NOME PONTO
@@ -627,7 +628,7 @@ public void geraCamadaRespostaPontoCentral (double eixoX,double eixoY, String no
 			// definindo o tipo de geometria do feature construido
 			feature1.setGeometry(point);
 
-			// inserindo o feature na coleção de features
+			// inserindo o feature na coleï¿½ï¿½o de features
 			fc1.add(feature1);
 		
 
@@ -639,7 +640,7 @@ public void geraCamadaRespostaPontoCentral (double eixoX,double eixoY, String no
 			e.printStackTrace();
 			System.out.println("Falha na leitura do arquivo.");
 			JOptionPane.showMessageDialog(null,
-					"Falha na leitura do arquivo. Verifique se arquivo está formatado conforme o padrão.");
+					"Falha na leitura do arquivo. Verifique se arquivo estï¿½ formatado conforme o padrï¿½o.");
 			throw new Exception();
 		}
 	}

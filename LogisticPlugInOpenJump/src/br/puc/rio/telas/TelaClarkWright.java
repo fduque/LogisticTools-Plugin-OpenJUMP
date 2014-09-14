@@ -115,6 +115,13 @@ public class TelaClarkWright extends JDialog {
 		gbc_comboBox_selecioneIDcamada.gridy = 6;
 		getContentPane().add(comboBox_selecioneIDcamada,
 				gbc_comboBox_selecioneIDcamada);
+		
+		JLabel label = new JLabel(".");
+		GridBagConstraints gbc_label = new GridBagConstraints();
+		gbc_label.insets = new Insets(0, 0, 5, 5);
+		gbc_label.gridx = 1;
+		gbc_label.gridy = 7;
+		getContentPane().add(label, gbc_label);
 
 		JLabel lblInformaoPontoOrigem = new JLabel(
 				"Informa\u00E7\u00E3o Ponto Origem:");
@@ -494,7 +501,7 @@ public class TelaClarkWright extends JDialog {
 			JOptionPane
 			.showMessageDialog(
 					null,
-					"A camada selecionada náo é válida.");
+					"A camada selecionada nï¿½o ï¿½ vï¿½lida.");
 			throw new Exception();
 		}
 	}
@@ -528,7 +535,7 @@ public class TelaClarkWright extends JDialog {
 			JOptionPane
 			.showMessageDialog(
 					null,
-					"A camada selecionada náo é válida.");
+					"A camada selecionada nï¿½o ï¿½ vï¿½lida.");
 			throw new Exception();
 		}
 	}
@@ -538,7 +545,7 @@ public class TelaClarkWright extends JDialog {
 																				// o
 																				// combo
 																				// box
-		((DefaultComboBoxModel<Object>) combo.getModel()).addElement("Padrão");
+		((DefaultComboBoxModel<Object>) combo.getModel()).addElement("PadrÃ£o");
 		((DefaultComboBoxModel<Object>) combo.getModel())
 				.addElement("Ajustado");
 	}
@@ -564,7 +571,7 @@ public class TelaClarkWright extends JDialog {
 			JOptionPane
 					.showMessageDialog(
 							null,
-							"Não pode haver valor null nos campos de -Parâmetro de Veículo ou Zona-.\n O valor mínimo em cada campo é zero.");
+							"NÃ£o pode haver valor null nos campos de -ParÃ¢metro de VeÃºculo ou Zona-.\n O valor mÃ­nimo em cada campo ï¿½ zero.");
 			resposta = false;
 		} else {
 			resposta = true;

@@ -27,7 +27,7 @@
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - WIDTH_KEY</key>
-      <value class="java.lang.Integer">1229</value>
+      <value class="java.lang.Integer">1280</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - STATUSPANEL_DIVIDER_LOCATION_3</key>
@@ -67,7 +67,7 @@
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - STATUSPANEL_DIVIDER_LOCATION_1</key>
-      <value class="java.lang.Integer">821</value>
+      <value class="java.lang.Integer">872</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.snap.SnapToFeaturesPolicy - ENABLED</key>
@@ -83,7 +83,7 @@
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - DESKTOPSTATUS_DIVIDER_LOCATION</key>
-      <value class="java.lang.Integer">661</value>
+      <value class="java.lang.Integer">643</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.datasource.SaveDatasetAsPlugIn - LAST FORMAT</key>
@@ -91,7 +91,7 @@
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - ATTRIBUTES_WINDOW_SIZE_WIDTH</key>
-      <value class="java.lang.Integer">820</value>
+      <value class="java.lang.Integer">559</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">org.openjump.core.ui.plugin.file.OpenRecentPlugIn.PROJECTS</key>
@@ -103,15 +103,15 @@
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - HEIGHT_KEY</key>
-      <value class="java.lang.Integer">722</value>
+      <value class="java.lang.Integer">724</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - ATTRIBUTES_WINDOW_POSITION_X</key>
-      <value class="java.lang.Integer">262</value>
+      <value class="java.lang.Integer">478</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - ATTRIBUTES_WINDOW_POSITION_Y</key>
-      <value class="java.lang.Integer">70</value>
+      <value class="java.lang.Integer">391</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">org.openjump.core.ui.SelectionStyllingOptionsPanel SELECTION_STYLE_POINT_FORM</key>
@@ -127,11 +127,11 @@
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.datasource.LoadFileDataSourceQueryChooser - FILE CHOOSER COORDINATE SYSTEM</key>
-      <value class="java.lang.String">Unspecified</value>
+      <value class="java.lang.String">Não especificado</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.datasource.LoadFileDataSourceQueryChooser - FILE CHOOSER DIRECTORY</key>
-      <value class="java.lang.String">D:\05 Desktop\Dissertação PUC\Mapas_Camadas</value>
+      <value class="java.lang.String">/Users/fabioregis/Documents/Mestrado PUC/Apresentacao Dissertacao PUC/Exemplo OpenJump - Problema Formacao de Zonas/Por Nivel de Serviço</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">org.openjump.core.ui.plugin.file.OpenRecentPlugIn.FILES</key>
@@ -139,7 +139,7 @@
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.plugin.ViewAttributesPlugIn - ATTRIBUTES_WINDOW_SIZE_HEIGHT</key>
-      <value class="java.lang.Integer">125</value>
+      <value class="java.lang.Integer">219</value>
     </mapping>
     <mapping>
       <key class="java.lang.String">com.vividsolutions.jump.workbench.ui.WorkbenchFrame - VERTICAL_KEY</key>

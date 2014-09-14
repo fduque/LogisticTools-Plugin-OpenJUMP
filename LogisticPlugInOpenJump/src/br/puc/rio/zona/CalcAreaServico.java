@@ -16,7 +16,7 @@ public class CalcAreaServico {
 
 	
 	/*
-Essa classe é especializada para calcular a área admissível por tempo ou por capacidade física (carga).
+Essa classe ï¿½ especializada para calcular a ï¿½rea admissï¿½vel por tempo ou por capacidade fï¿½sica (carga).
 		*/	
 	
 	/**
@@ -69,19 +69,19 @@ Essa classe é especializada para calcular a área admissível por tempo ou por cap
 	public double calcAreaPorTempo() {
 		System.out
 				.println("Iniciando Calculo de Area Admissivel por Tempo... ");
-		double etaNiveldeServico = Matematica.calcEta(nivelDeServico);
+		double etaNiveldeServico = Math.abs(Matematica.calcEta(nivelDeServico));
 		System.out.println("Valor eta: " + etaNiveldeServico);
 		double k1 = calcK1();
 		double k2 = calcK2();
 		double a = Math.pow(k1, 2);
 		System.out.println("Valor de a: " + a);
 		double b = -1
-				* ((2 * k1 * (tempoJornadaMinutos - tempoMedioInOutZonaMinutos)) + (Math
+				* ((2 * k1 * (tempoJornadaMinutos - 2*tempoMedioInOutZonaMinutos)) + (Math
 						.pow(etaNiveldeServico, 2) * k2));
 		System.out.println("Valor de b: " + b);
 		double c = (Math.pow(
-				(tempoJornadaMinutos - tempoMedioInOutZonaMinutos), 2))
-				- (Math.pow(etaNiveldeServico, 2) * 2 * zona.getVartparada());
+				(tempoJornadaMinutos - 2*tempoMedioInOutZonaMinutos), 2))
+				- ((Math.pow(etaNiveldeServico, 2) * 2 * zona.getVartparada()));
 		System.out.println("Valor de c: " + c);
 		areaServPorTempo = (-b - (Math.sqrt((Math.pow(b, 2) - (4 * a * c)))))
 				/ (2 * a);

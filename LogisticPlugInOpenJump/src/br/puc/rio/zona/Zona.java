@@ -6,7 +6,7 @@ import com.vividsolutions.jts.geom.Geometry;
 
 /**
  * @author Developer
- * Fábio Trindade Duque Estrada Regis / duqueregis@gmail.com / PUC-RIO
+ * Fï¿½bio Trindade Duque Estrada Regis / duqueregis@gmail.com / PUC-RIO
  *
  */
 public class Zona {
@@ -18,6 +18,7 @@ public class Zona {
 	private double mediatparada;
 	private double desvPadtparada;
 	private double mediaN;
+	private double desvPadN;
 	private double lambda;
 	private double mediaCarga;
 	private double desvPadCarga;
@@ -32,8 +33,8 @@ public class Zona {
 
 	
 	/*
-	 * Essa classe representa uma zona e tem métodos sobre informações como: tempo de ciclo médio na zona, velocidade média na zona, densidade de pontos de atendimento por unidade de área, etc.
-	 * Ela é usada como objeto base para os cálculos de nível de serviço, área admissível e formação de subzonas.
+	 * Essa classe representa uma zona e tem mï¿½todos sobre informaï¿½ï¿½es como: tempo de ciclo mï¿½dio na zona, velocidade mï¿½dia na zona, densidade de pontos de atendimento por unidade de ï¿½rea, etc.
+	 * Ela ï¿½ usada como objeto base para os cï¿½lculos de nï¿½vel de serviï¿½o, ï¿½rea admissï¿½vel e formaï¿½ï¿½o de subzonas.
 	 */	
 	
 	
@@ -171,6 +172,14 @@ public class Zona {
 				+ ", mediaCarga=" + mediaCarga + ", varCarga=" + varCarga
 				+ ", desvPadCarga=" + desvPadCarga + ", veloMedia=" + veloMedia
 				+ "]";
+	}
+
+	public double getDesvPadN() {
+		return desvPadN;
+	}
+
+	public void setDesvPadN(double desvPadN) {
+		this.desvPadN = desvPadN;
 	}
 
 }

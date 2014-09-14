@@ -1,5 +1,7 @@
 package br.puc.rio.zona;
 
+import org.python.modules.math;
+
 import br.puc.rio.utilities.Matematica;
 
 public class CalcNivelServico {
@@ -21,8 +23,8 @@ public class CalcNivelServico {
 	String melhorTipoNSzona;
 
 	/*
-Essa classe é especializada para calcular o nível de serviço a partir dos parâmetros de zona definidos.
-Ela calcula o nível de serviço por capacidade ou por tempo, sendo tempo de jornada normal ou de jornada máximo (com horas extras).
+Essa classe ï¿½ especializada para calcular o nï¿½vel de serviï¿½o a partir dos parï¿½metros de zona definidos.
+Ela calcula o nï¿½vel de serviï¿½o por capacidade ou por tempo, sendo tempo de jornada normal ou de jornada mï¿½ximo (com horas extras).
 		*/	
 	
 	
@@ -53,9 +55,12 @@ Ela calcula o nível de serviço por capacidade ou por tempo, sendo tempo de jorna
 									// capacidade
 
 		double valorR = 1 - this.perdaEstiva;
-		double valorRemUnidCarga = valorR * this.capacidadeVeiculo;
-		this.etaPorCapacidade = (valorRemUnidCarga - this.zona.getMediaCarga())
-				/ this.zona.getDesvPadCarga();
+		double eW = this.zona.getMediaN()*this.zona.getMediaCarga();
+		double varU = this.zona.getVarCarga();
+		double varW = this.zona.getMediaN()*(Math.pow(this.zona.getMediaCarga(),2)+varU);
+		double desvpadW = math.sqrt(varW);
+		double rCAP = valorR*capacidadeVeiculo;
+		this.etaPorCapacidade = (rCAP-eW)/desvpadW;
 		this.nsPorCapacidade = 1 - Matematica
 				.calcFunEtaAcum(this.etaPorCapacidade);
 		System.out.println("NS Por capacidade: " + this.nsPorCapacidade
