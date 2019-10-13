@@ -20,20 +20,20 @@ Nesse repositório, contém:
 
 Procedimentos implementados:
 
-  o	Procedimentos para solução de problemas de localização
-  	Definição do ponto central pela métrica Retangular
+  -	Procedimentos para solução de problemas de localização
+  -	Definição do ponto central pela métrica Retangular
     •	Método de Fibonacci
     •	Método da Derivada
-  	Definição do ponto central pela métrica Euclidiana
+  -	Definição do ponto central pela métrica Euclidiana
     •	Método de Weisfield
-  o	Procedimentos para problemas de formação de cluster
+  Procedimentos para problemas de formação de cluster
     •	Algoritmo de Kruskal adaptado para formação de vários Clusters
-  o	Procedimentos para problemas de roteirização
-  	Métodos de Construção de roteiro
+  Procedimentos para problemas de roteirização
+  -	Métodos de Construção de roteiro
     •	Método de Clarke e Wright
-  	Método de Melhoria de Roteiros
+  -	Método de Melhoria de Roteiros
     •	Método 2-opt
-  o	Procedimentos para solução de problemas de formação de zonas
+  Procedimentos para solução de problemas de formação de zonas
   	Métodos de Construção de zonas 
     •	Método de divisão de regiões em zonas de acordo com nível de serviço
     •	Método de Clarke e Wright com parâmetro de forma
