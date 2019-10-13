@@ -38,6 +38,14 @@ Procedimentos implementados:
 - Método de divisão de regiões em zonas de acordo com nível de serviço
 - Método de Clarke e Wright com parâmetro de forma
 
+Screenshots dos procedimentos implementados:
+![alt text](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/ImgBefAfter.png)
+![alt text](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/ImgCluster.png)
+![alt text](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/ImgZones.png)
+![alt text](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/ImgRout.png)
+![alt text](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/ImgClark.png)
+![alt text](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/ImgZo.png)
+
 
 ###########################################################################################################################
 
@@ -77,3 +85,11 @@ In this repository, it contains:
 - Methods of Construction of zones
 - Method of dividing regions into zones according to service level
 - Clarke and Wright method with shape parameter
+
+Screenshots from features implemented:
+![alt text](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/ImgBefAfter.png)
+![alt text](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/ImgCluster.png)
+![alt text](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/ImgZones.png)
+![alt text](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/ImgRout.png)
+![alt text](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/ImgClark.png)
+![alt text](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/ImgZo.png)
