@@ -9,6 +9,9 @@ Contato: Fábio / duqueregis@gmail.com
   O projeto anexo implementa diversos procedimentos para solução de problemas planejamento de logística, marketing, entre outros. Os procedimentos 
   foram implementados na linguagem JAVA dentro de um plug-in e incorporado a uma plataforma GIS chamada OpenJUMP (ver abaixo) .
 
+**Instalação:**
+  O documento Manual do Usuário contém todos os passos para instalação. [Acesse aqui](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/MANUAL_USUARIO_LOGISTIC_TOOLS_v1.pdf)
+
 About OpenJump - www.openjump.org
   O software OpenJUMP (Figura 6 - Imagem do Programa OpenJUMP.), inicialmente chamado de Jump (Java Unified Mapping Plataform) é um SIG (Sistema de Informação Geográfica) construído com a tecnologia Java. O programa foi criado pela empresa Vivid Solutions e lançado no ano de 2006, mas atualmente o sistema é mantido por um grupo de voluntários de vários países.
 
@@ -58,6 +61,9 @@ Contact: Fábio / duqueregis@gmail.com
 **Project's goal:**
   The attached project implements several procedures for solving logistics, marketing, and other planning problems. The procedures
   were implemented in the JAVA language within a plug-in and incorporated into a GIS platform called OpenJUMP (see below).
+
+**Instalation:**
+  The User Guide contains all necessary steps to install and run. [Access here](https://github.com/fduque/LogisticTools-Plugin-OpenJUMP/blob/master/MANUAL_USUARIO_LOGISTIC_TOOLS_v1.pdf)
 
 About OpenJump - www.openjump.org
   The OpenJUMP software (Figure 6 - Image of the OpenJUMP Program), initially called Jump (Java Unified Mapping Platform) is a GIS (Geographic Information System) built with Java technology. The program was created by the company Vivid Solutions and launched in the year 2006, but currently the system is maintained by a group of volunteers from several countries.
