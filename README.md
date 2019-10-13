@@ -20,20 +20,20 @@ About OpenJump - www.openjump.org
 
 Procedimentos implementados:
 
-**Procedimentos para solução de problemas de localização**
-**Definição do ponto central pela métrica Retangular**
+- **Procedimentos para solução de problemas de localização**
+- **Definição do ponto central pela métrica Retangular**
 - Método de Fibonacci
 - Método da Derivada
-**Definição do ponto central pela métrica Euclidiana**
+- **Definição do ponto central pela métrica Euclidiana**
 - Método de Weisfield
-**Procedimentos para problemas de formação de cluster**
+- **Procedimentos para problemas de formação de cluster**
 - Algoritmo de Kruskal adaptado para formação de vários Clusters
-**Procedimentos para problemas de roteirização**
+- **Procedimentos para problemas de roteirização**
 - Métodos de Construção de roteiro
 - Método de Clarke e Wright
 - Método de Melhoria de Roteiros
 - Método 2-opt
-**Procedimentos para solução de problemas de formação de zonas**
+- **Procedimentos para solução de problemas de formação de zonas**
 - Métodos de Construção de zonas 
 - Método de divisão de regiões em zonas de acordo com nível de serviço
 - Método de Clarke e Wright com parâmetro de forma
@@ -60,20 +60,20 @@ In this repository, it contains:
 - Installation and use guide for the plug-in. (For now only in Pt-br).
 - Test files / examples.
 
-**Procedures implemented:**
-**Definition of the center point by the Rectangular metric**
+- **Procedures implemented:**
+- **Definition of the center point by the Rectangular metric**
 - Fibonacci method
 - Derivative method
-**Definition of the central point by the Euclidean metric**
+- **Definition of the central point by the Euclidean metric**
 - Weisfield method
-**Procedures for clustering issues**
+- **Procedures for clustering issues**
 - Kruskal's algorithm adapted to form several clusters
-**Procedures for routing issues**
+- **Procedures for routing issues**
 - Methods of Construction of script
 - Clarke and Wright Method
 - Roadmap Improvement Method
 - 2-opt method
-**Procedures for solving zone formation problems**
+- **Procedures for solving zone formation problems**
 - Methods of Construction of zones
 - Method of dividing regions into zones according to service level
 - Clarke and Wright method with shape parameter
